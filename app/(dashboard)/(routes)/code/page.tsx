@@ -58,7 +58,7 @@ const CodePage = () => {
 
             form.reset()
         }
-        catch (err) {
+        catch (err:any) {
             if(err?.response?.status===403){
                 proModel.onOpen()
             }

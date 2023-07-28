@@ -56,7 +56,7 @@ const ConversationPage = () => {
 
             form.reset()
         }
-        catch (err) {
+        catch (err:any) {
             //TO DO Open Pro Model -->Triggers specfic error when free trail over.
             if(err?.response?.status===403){
                 proModel.onOpen()

@@ -50,7 +50,7 @@ const ImageGenerationPage = () => {
           const urls = response.data.map((image: { url: string }) => image.url);
     
           setImages(urls);
-        } catch (err) {
+        } catch (err:any) {
             if(err?.response?.status===403){
                 proModel.onOpen()
             }
